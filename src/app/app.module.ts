@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+// Appex-Charts
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { AppexChartComponent } from './components/appex-chart/appex-chart.component';
-
+// fontawesome
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,7 +22,6 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { TagModule } from 'primeng/tag';
 import { SliderModule } from 'primeng/slider';
 import { ProgressBarModule } from 'primeng/progressbar';
-// For dynamic progressbar demo
 import { ToastModule } from 'primeng/toast';
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';

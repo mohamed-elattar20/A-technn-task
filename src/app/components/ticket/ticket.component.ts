@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import {
   faTrashCan,
   faCopy,
@@ -18,8 +18,6 @@ export class TicketComponent {
   faPaperPlane = faPaperPlane;
   show() {}
   constructor(private toast: HotToastService) {}
-
-  @ViewChild('inputText') inputText!: ElementRef;
 
   copyToClipboard(inputElement: HTMLInputElement): void {
     const textToCopy = inputElement.value;
@@ -42,18 +40,5 @@ export class TicketComponent {
           });
         });
     }
-    // else {
-    //   const textArea = document.createElement('textarea');
-    //   textArea.value = textToCopy;
-    //   document.body.appendChild(textArea);
-    //   textArea.select();
-    //   document.execCommand('copy');
-    //   document.body.removeChild(textArea);
-    //   // alert('Text copied to clipboard!');
-    //   this.toast.success('Text copied to clipboard ', {
-    //     position: 'top-center',
-    //     duration: 2000,
-    //   });
-    // }
   }
 }
