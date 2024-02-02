@@ -1,0 +1,13 @@
+.onhover:hover {
+  background-color: #8a74f9 !important;
+}
+.onhover:hover .hover {
+  color: aliceblue !important;
+}
+.hover-icon:hover {
+  background-color: #8a74f9 !important;
+  color: aliceblue !important;
+}
+.hover-icon:hover .download-icon {
+  color: aliceblue !important;
+}

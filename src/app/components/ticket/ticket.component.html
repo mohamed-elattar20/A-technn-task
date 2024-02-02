@@ -1,0 +1,93 @@
+<aside class="z-0 position-relative">
+  <div class="upper-Card p-2">
+    <div class="item1 d-flex flex-column w-100 justify-content-center">
+      <div class="text-center w-100">
+        <span style="font-weight: 500"> عرض التذكرة الخاصة بالفيلم </span>
+
+        <button pTooltip="حذف" tooltipPosition="bottom" class="btn text-light">
+          <fa-icon [icon]="faTrashCan"></fa-icon>
+        </button>
+      </div>
+      <div class="mt-3 text-center w-75 align-self-center">
+        <div
+          class="d-flex align-items-baseline bg-light py-1 px-1 rounded-3 align-self-center justify-content-around"
+        >
+          <div class="w-75">
+            <input
+              class="text-black border-0 onSelect w-100 bg-light text-center"
+              #inputText
+              type="text"
+              value="www.tazkrty.com/473847"
+              readonly
+            />
+          </div>
+          <div>
+            <button
+              (click)="copyToClipboard(inputText)"
+              class="btn text-black w-25"
+              pTooltip="نسخ"
+              tooltipPosition="left"
+            >
+              <fa-icon style="color: #8a74f9" [icon]="faCopy"></fa-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="my-2 text-center w-100">فعال حتى 15 يوليو 2023</div>
+    </div>
+  </div>
+
+  <div class="lower-Card container-fluid">
+    <div
+      class="mt-4 d-flex justify-content-between p-2 align-content-start align-items-start"
+    >
+      <div class="mt-3">
+        <p class="me-3 mt-3">خصم</p>
+        <div class="d-flex">
+          <div class="me-3 mt-2">
+            <span style="font-size: 18px; line-height: 22px; font-weight: 500"
+              >25%</span
+            >
+          </div>
+          <button
+            type="button"
+            class="btn me-3 text-light border border-1 border-light onhover"
+          >
+            <fa-icon [icon]="faPaperPlane"></fa-icon>
+            مشاركة
+          </button>
+        </div>
+      </div>
+      <div class="ms-3 mb-2 w-25">
+        <!-- <qrcode
+          class="w-25"
+          [qrdata]="'Your data string'"
+          [width]="100"
+          [errorCorrectionLevel]="'M'"
+        ></qrcode> -->
+
+        <!--  -->
+        <div class="qrcodeImage align-self-end">
+          <qrcode
+            [qrdata]="'https://github.com/Cordobo/angularx-qrcode'"
+            [allowEmptyString]="true"
+            [ariaLabel]="'QR Code image with the following content...'"
+            [cssClass]="'center'"
+            [colorDark]="'#000000'"
+            [colorLight]="'#ffffffff'"
+            [elementType]="'canvas'"
+            [errorCorrectionLevel]="'M'"
+            [imageSrc]="'./assets/angular-logo.png'"
+            [imageHeight]="75"
+            [imageWidth]="75"
+            [scale]="32"
+            [title]="'A custom title attribute'"
+            [width]="100"
+          ></qrcode>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</aside>
+<!-- <p-toast></p-toast> -->

@@ -1,0 +1,49 @@
+aside {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+}
+.upper-Card {
+  border: 1px;
+  background-color: #8a74f9;
+  color: rgb(250, 250, 250);
+
+  border: 5px dotted #8a74f9;
+  border-radius: 15px 15px 0px 0px;
+  border-bottom: 2.5px dashed #ebeaeaaa;
+  background-image: url("../../../assets/imgs/Mask group.png");
+}
+
+.upper-Card::before {
+  content: " ";
+  border: #f3f5f7 solid 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  left: -11px;
+}
+.upper-Card::after {
+  content: "";
+  border: #f3f5f7 solid 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 150px;
+  right: -11px;
+}
+
+/* --------------------second half card -------------------- */
+.lower-Card {
+  border: 1px;
+  background-color: #8a74f9;
+  border-radius: 0px 0px 15px 15px;
+  background-image: url("../../../assets/imgs/Mask group.png");
+}
+.onSelect:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+.onhover:hover {
+  background-color: aliceblue;
+  color: #8a74f9 !important;
+}
